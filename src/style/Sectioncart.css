@@ -13,3 +13,94 @@
     align-items: center;
     justify-content: center;
 }
+
+.cart {
+    background: url('../components/images/Cart.png');
+    height: 57rem;
+    width:60rem;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 22rem
+
+}
+
+.sect{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.why1{
+    position: absolute;
+    left:4%;
+    top:230%;
+    width: 22%;
+}
+
+.why1 .diverse {
+    font-size: 2.2rem;
+    word-spacing:10px;
+    color: black;
+    text-align: start;
+    line-height: 2.3rem;
+}
+
+.why1 .youget{
+    margin-top: -1rem;
+    width: 19rem;
+    font-size: 1rem;
+    color: black;
+    text-align: start;
+    line-height: 1.4rem;
+}
+
+
+.why2{
+    position: absolute;
+    right:6%;
+    top:250%;
+    width: 20%;
+}
+
+.why2 .diverse1 {
+    font-size: 2.4rem;
+    word-spacing:10px;
+    color: black;
+    text-align: start;
+    line-height: 3rem;
+}
+
+.why2 .youget1{
+    margin-top: -1rem;
+    width: 15rem;
+    font-size: 0.8rem;
+    color: black;
+    text-align: start;
+    line-height: 1rem;
+}
+
+.why3{
+    position: absolute;
+    left:6%;
+    top:290%;
+    width: 20%;
+}
+
+.why3 .diverse2 {
+    font-size: 2.4rem;
+    word-spacing:10px;
+    color: black;
+    text-align: start;
+    line-height: 3rem;
+}
+
+.why3 .youget2{
+    margin-top: -1rem;
+    width: 15rem;
+    font-size: 0.8rem;
+    color: black;
+    text-align: start;
+    line-height: 1rem;
+}
