@@ -1,0 +1,13 @@
+.images{
+    width: 100%;
+    height: 85.4rem;
+    background: url(../components//images/products.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pro{
+    color: black;
+    font-size: 4rem;
+    margin-left: 6rem;
+}

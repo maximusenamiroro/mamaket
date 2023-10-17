@@ -1,0 +1,51 @@
+.parent{
+    background: #f7f7f7;
+    display: flex;
+}
+
+.child1{
+    width: 35%;
+    height: 20%;
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.child1 h3{
+    font-size: 1.9rem;
+    width: 68%;
+}
+
+
+.child1 p{
+  font-size: 0.9rem;
+  width: 89%;
+}
+
+.child2{
+    width: 65%
+}
+
+.circle{
+    width: 80%;
+    margin-top: 70px;
+}
+
+.phone{
+    width: 27%;
+    position: absolute;
+    top: 723.3%;
+    left: 50%;
+}
+
+.imag{ 
+    display: flex;
+    gap: 14px;
+}
+
+button{
+     margin-top: 20px;
+     padding:18px 26px;
+     border: none;
+     border-radius: 20px;
+     background-color: #208573;
+}

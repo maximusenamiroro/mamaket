@@ -13,15 +13,11 @@
   width: 9%;
 }
 
-p {
-  color: white;
-  font-size: 5.2rem;  
-}
-
 .T1{
     margin-left: 12%;
     letter-spacing: 4px;
-   
+    color: white;
+    font-size: 5.2rem; 
 }
 
 span{
@@ -66,4 +62,8 @@ span{
 .show-pic{
     width: 107%;
     margin-left: -12px;
+}
+
+.btn-text{
+    color: #fff;
 }
