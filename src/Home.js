@@ -6,6 +6,7 @@ import Products from './components/Products'
 import Faq from './components/Faq'
 import ComingSoon from './components/ComingSoon'
 import Footer from './components/Footer'
+import { Modal } from './components/Modal/Modal'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <Faq/>
     <ComingSoon/>
     <Footer/>
+    <Modal/>
     </div>
   )
 }
