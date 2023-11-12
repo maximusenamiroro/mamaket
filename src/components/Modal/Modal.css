@@ -17,3 +17,12 @@
     width: 30rem;
 }
 
+.close {
+    cursor: pointer;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2em;
+}

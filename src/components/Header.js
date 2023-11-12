@@ -2,9 +2,15 @@ import React from "react";
 import "../style/Header.css";
 import Logo from "../components/images/Logo.png";
 import Show from '../components/images/Component 1.png'
-import { Link } from "react-router-dom";
+import { Modal } from "./Modal/Modal";
 
-const Header = () => {
+
+const Header = ({ setModalOpen }) => {
+
+    const handleclick = () => {
+      setModalOpen(true);
+    };
+
   return (
     <div className="banner">
       <div>
@@ -19,7 +25,7 @@ const Header = () => {
         </div>
 
         <div className="Pbtn">
-          <button className="btn">Join Mamaket</button>
+          <button className="btn" onClick={handleclick}>Join Mamaket</button>
           <p className="btn-text">
             An African marketplace for buying, selling and celebrating culture
           </p>
@@ -28,6 +34,7 @@ const Header = () => {
       <div className="greenbackground">
          <img src={Show} alt="" className="show-pic" />
       </div>
+      <Modal>ghj</Modal>
     </div>
   );
 };

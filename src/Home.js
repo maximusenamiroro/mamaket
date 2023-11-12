@@ -11,14 +11,14 @@ import { Modal } from './components/Modal/Modal'
 const Home = () => {
   return (
     <div>
-    <Header/>
+    <Modal/>
     <Sectioncart/>
     <Culture/>
     <Products/>
     <Faq/>
     <ComingSoon/>
     <Footer/>
-    <Modal/>
+    
     </div>
   )
 }
