@@ -2,7 +2,6 @@ import React from "react";
 import "../style/Header.css";
 import Logo from "../components/images/Logo.png";
 import Show from '../components/images/Component 1.png'
-import { Modal } from "./Modal/Modal";
 
 
 const Header = ({ setModalOpen }) => {
@@ -34,7 +33,6 @@ const Header = ({ setModalOpen }) => {
       <div className="greenbackground">
          <img src={Show} alt="" className="show-pic" />
       </div>
-      <Modal>ghj</Modal>
     </div>
   );
 };
