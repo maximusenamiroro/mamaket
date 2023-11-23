@@ -130,7 +130,7 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
 
 
             <div className='modal-footer'>
-              <button className='btSubmit' onClick={handleButtonClick}>Submit</button>
+              <button className='bttSubmit' onClick={handleButtonClick}>Submit Form</button>
             </div>
           </div>
 
