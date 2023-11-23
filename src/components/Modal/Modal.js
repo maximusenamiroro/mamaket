@@ -1,30 +1,142 @@
 import { useState } from 'react';
-
+import Logos from "../images/Logos.png";
 import React from 'react'
 import './Modal.css'
 import Header from '../Header';
 
 
-export const Modal = ({children}) => {
+export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
+
   const [modalOpen, setModalOpen] = useState(false)
-  return(
-  <div>
-    {modalOpen && (
-     <div className='modal-container'>
-      
-        <div className='modal'>   
+  const handleButtonClick = () => {
+    setModalOpen(false)
+  }
+
+  return (
+    <div>
+      {modalOpen && (
+       <div className='modal-container' onClick={(e) => {
+        if (e.target.className === 'modal-container') {
+          handleButtonClick(e);
+        }
+      }}>
+  
+
+          <div className='modal'>
+
             <div className='modal-header'>
-              <p className='close'>&times;</p>  
+              <div><img className="logos" src={Logos} alt="" /></div>
+
+              <div> <p className='close'>&times;</p></div>
+
             </div>
-            <div className='modal-content'>{children}</div>
+
+            <div className='Form'>
+              <div className='first-name'>
+                <div><label htmlFor="First Name"
+                  style={{
+                    fontSize: '20px'
+                  }}>First Name</label></div>
+
+                <div><input type="text"
+                  name="FirstName"
+                  placeholder='Enter your first name'
+                  style={{
+                    height: '30px',
+                    width: '780px', // Adjust the width value as needed
+                    padding: '5px',
+                    borderRadius: '15px',
+                    border: '1px solid #ccc',
+                  }}
+                /></div>
+              </div>
+             
+              <div className='Last-name'
+              style={{
+                paddingTop:'20px'
+              }}>
+                <div><label htmlFor="Last Name"
+                  style={{
+                    fontSize: '20px',
+                    
+                  }}>Last Name</label></div>
+
+                <div><input type="text"
+                  name="LastName"
+                  placeholder='Enter your Last name'
+                  style={{
+                    
+                    height: '30px',
+                    width: '780px', // Adjust the width value as needed
+                    padding: '5px',
+                    borderRadius: '15px',
+                    border: '1px solid #ccc',
+                  }}
+                /></div>
+              </div>
+
+              <div className='Email'
+              style={{
+                paddingTop:'20px'
+              }}>
+                <div><label htmlFor="Email"
+                  style={{
+                    fontSize: '20px',
+                    
+                  }}>Email</label></div>
+
+                <div><input type="text"
+                  name="Email"
+                  placeholder='Enter your Email'
+                  style={{
+                    
+                    height: '30px',
+                    width: '780px', // Adjust the width value as needed
+                    padding: '5px',
+                    borderRadius: '15px',
+                    border: '1px solid #ccc',
+                  }}
+                /></div>
+              </div>
+
+              <div className='Email' style={{ paddingTop: '20px' }}>
+      <div>
+        <label htmlFor="Email" style={{ fontSize: '20px' }}>
+          Email
+        </label>
+      </div>
+      <div>
+        <select
+          id="selectEmail"
+          name="Email"
+          style={{
+            height: '46px',
+            width: '795px', // Adjust the width value as needed
+            padding: '5px',
+            borderRadius: '15px',
+            border: '1px solid #ccc',
+            fontSize: '16px', // Adjust the font size as needed
+            // Add more styles as needed
+          }}
+        >
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+    </div>
+
+            </div>
+
+
             <div className='modal-footer'>
-                <button className='btSubmit'>Submit</button>
+              <button className='btSubmit' onClick={handleButtonClick}>Submit</button>
             </div>
+          </div>
+
         </div>
-       
-        </div>
-        )}
-        <Header setModalOpen={setModalOpen}/>
-        </div>
+      )}
+      <Header setModalOpen={setModalOpen} />
+    </div>
   );
 }
