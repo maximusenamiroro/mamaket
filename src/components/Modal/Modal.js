@@ -42,7 +42,8 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
                   name="FirstName"
                   placeholder='Enter your first name'
                   style={{
-                    height: '30px',
+                    fontSize: '20px',
+                    height: '40px',
                     width: '780px', // Adjust the width value as needed
                     padding: '5px',
                     borderRadius: '15px',
@@ -65,8 +66,8 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
                   name="LastName"
                   placeholder='Enter your Last name'
                   style={{
-                    
-                    height: '30px',
+                    fontSize: '20px',
+                    height: '40px',
                     width: '780px', // Adjust the width value as needed
                     padding: '5px',
                     borderRadius: '15px',
@@ -89,8 +90,8 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
                   name="Email"
                   placeholder='Enter your Email'
                   style={{
-                    
-                    height: '30px',
+                    fontSize: '20px',
+                    height: '40px',
                     width: '780px', // Adjust the width value as needed
                     padding: '5px',
                     borderRadius: '15px',
@@ -110,7 +111,8 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
           id="selectEmail"
           name="Email"
           style={{
-            height: '46px',
+            fontSize: '20px',
+            height: '57px',
             width: '795px', // Adjust the width value as needed
             padding: '5px',
             borderRadius: '15px',
@@ -119,9 +121,18 @@ export const Modal = ({ onSubmit, onCancel, onClose, children }) => {
             // Add more styles as needed
           }}
         >
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+          <option value="option1"
+          style={{
+            fontSize: '20px'
+          }}>Option 1</option>
+          <option value="option2"
+          style={{
+            fontSize: '20px'
+          }}>Option 2</option>
+          <option value="option3"
+          style={{
+            fontSize: '20px'
+          }}>Option 3</option>
         </select>
       </div>
     </div>
