@@ -2,11 +2,10 @@ import React from 'react'
 import Sectioncart from './components/Sectioncart'
 import Culture from './components/Culture'
 import Products from './components/Products'
-import Faq from './components/Faq'
+import Accordion from './components/Accordion'
 import ComingSoon from './components/ComingSoon'
 import Footer from './components/Footer'
 import { Modal } from './components/Modal/Modal'
-import Header from './components/Header'
 
 const Home = () => {
   return (
@@ -15,7 +14,7 @@ const Home = () => {
     <Sectioncart/>
     <Culture/>
     <Products/>
-    <Faq/>
+    <Accordion/>
     <ComingSoon/>
     <Footer/>
     

@@ -1,6 +1,7 @@
 .parent{
     background: #f7f7f7;
     display: flex;
+    height: 32em;
 }
 
 .child1{
@@ -22,7 +23,7 @@
 }
 
 .child2{
-    width: 65%
+    width: 65%;
 }
 
 .circle{
@@ -31,10 +32,9 @@
 }
 
 .phone{
-    width: 27%;
-    position: absolute;
-    top: 734%;
-    left: 50%;
+    width: 52%;
+    margin-top: -46.5%;
+    margin-left: 8em;
 }
 
 .imag{ 
@@ -44,8 +44,10 @@
 
 button{
      margin-top: 20px;
-     padding:18px 26px;
+     padding:18px 46px;
+     color: white;
+     font-size: 20px;
      border: none;
-     border-radius: 20px;
+     border-radius: 35px;
      background-color: #208573;
 }
