@@ -1,7 +1,7 @@
 .parent{
     background: #f7f7f7;
     display: flex;
-    height: 32em;
+    height: 31em;
 }
 
 .child1{
@@ -27,14 +27,16 @@
 }
 
 .circle{
-    width: 80%;
-    margin-top: 70px;
+    width: 83.5%;
+    margin-top: 125px;
 }
 
 .phone{
-    width: 52%;
-    margin-top: -46.5%;
-    margin-left: 8em;
+    width: 54%;
+    top: -5%;
+    position: relative;
+    margin-top: -60em;
+    margin-left: 7em;
 }
 
 .imag{ 
